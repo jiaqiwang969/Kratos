@@ -15,6 +15,7 @@ jobs:
     - name: Get deal.tag
       run: |
         wget https://www.dealii.org/current/doxygen/deal.tag
+        git config --global http.version HTTP/1.1
         
     - name: Build Doxygen documentation
       uses: mattnotmitt/doxygen-action@v1.1.0
